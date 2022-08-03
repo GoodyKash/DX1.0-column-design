@@ -1,33 +1,56 @@
-/* h1 { 
-    color: orange;
-    border: 1px solid black;
-    display: inline;
- } */
- div{
-    /* border: 1px solid red; */
-    background-color:white;
-    color: white;
- }
- /*selection by classes  */
- .left-division{
-    vertical-align: top;
-    display: inline-block;
-    width: 65%;
-    height: 500px;
-    background: skyblue;
+/* Box Model */
+/* Flex box */
+{
+   margin: 0;
+   box-sizing: border-box;
+   /* This box-sizing makes it easier to maintain the same with height */
+}
+.body{
+   font-family: 'Inter', sans-serif;
+}
+.parent-div{
+   /* border: 2px solid black; */
+   display: flex;
+   /* By default flex direction is row */
+   /* flex-direction: column;*/
+}
 
-
- }
- .right-division{
-    vertical-align: top;
-    height: 250px;
-    width: 30%;
-    display: inline-block;
-    background: tomato;
- }
- .parent-container{
-    /* border: 3px solid green;g */
-    border: 3px solid green;
-    width: 70%;
-    margin: 0 auto;
- }
+.left-div{
+   background: #d9d9d9;
+   height: 360px;
+   width: 50%;
+   padding: 20px;
+}
+.right-div{
+   /* background: #ff6347; */
+   background: url(./Images/image1.jpg);
+   background-size: cover;
+   background-position: bottom left;
+   height: 400px;
+   width:50%;
+}
+.smart-line{
+   background: tomato;
+   height: 16px;
+   width: 140px;
+}
+.span{
+   color: tomato;
+}
+.logo-text{
+   margin-bottom: 20px;
+}
+.heading-text{
+   margin-bottom: 20px;
+}
+.header-longtext{
+   margin-bottom: 20px;
+}
+.link-holder{
+   /* border: 3px solid black; */
+   display: flex;
+   justify-content: space-evenly;
+   color: white;
+   /* This padding here is 20px for top&bottom while 0 for left & right */
+   padding: 20px 0;
+}
