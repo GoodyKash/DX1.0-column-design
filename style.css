@@ -1,56 +1,160 @@
 /* Box Model */
 /* Flex box */
-{
+* {
    margin: 0;
    box-sizing: border-box;
    /* This box-sizing makes it easier to maintain the same with height */
 }
-.body{
+
+.body {
    font-family: 'Inter', sans-serif;
 }
-.parent-div{
+
+.parent-div {
    /* border: 2px solid black; */
    display: flex;
    /* By default flex direction is row */
    /* flex-direction: column;*/
 }
 
-.left-div{
+.left-div {
    background: #d9d9d9;
-   height: 360px;
+   height: 360 px;
    width: 50%;
    padding: 20px;
 }
-.right-div{
+
+.right-div {
    /* background: #ff6347; */
    background: url(./Images/image1.jpg);
    background-size: cover;
    background-position: bottom left;
    height: 400px;
-   width:50%;
+   width: 50%;
+   position: relative;
 }
-.smart-line{
+
+.smart-line {
    background: tomato;
    height: 16px;
    width: 140px;
 }
-.span{
+
+.span {
    color: tomato;
 }
-.logo-text{
+
+.logo-text {
    margin-bottom: 20px;
 }
-.heading-text{
+
+.heading-text {
    margin-bottom: 20px;
 }
-.header-longtext{
+
+.header-longtext {
    margin-bottom: 20px;
 }
-.link-holder{
+
+.link-holder {
    /* border: 3px solid black; */
    display: flex;
    justify-content: space-evenly;
    color: white;
    /* This padding here is 20px for top&bottom while 0 for left & right */
    padding: 20px 0;
+}
+
+/*  background overlay */
+.bg-overlay {
+   width: 100%;
+   height: 100%;
+   background: rgba(225, 99, 71, 0.2);
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+/* Positioning --Relative position [absolute] */
+/* second section */
+.second-section {
+   /* border: 3px solid black; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 50px 0;
+}
+
+.secondsection-left {
+   width: 350px;
+   height: 360px;
+   background: #d9d9d9;
+   padding: 40px 25px;
+   text-align: center;
+}
+
+/* For Paragraph in secondsection-left */
+.p {
+   margin: 20px 0;
+   text-align: left;
+}
+
+.second-image {
+   width: 380px;
+   height: 420px;
+}
+
+.thrid-image {
+   width: 400px;
+   height: 420px;
+}
+
+.secondsection-right {
+   width: 380px;
+   height: 420px;
+   margin-left: 10px;
+   background: tomato;
+}
+
+/* Image rest */
+.img {
+   width: 100%;
+   height: 100%;
+}
+
+/* Third section */
+.thirdsection {
+   background: #d9d9d9;
+   /* bordern: 3px solid black; */
+   display: flex;
+   justify-content: center;
+   padding: 50px 0;
+}
+
+.thirdsection-left,
+.thirdsection-right {
+   width: 400px;
+   height: 420px;
+}
+
+.thirdsection-left {
+   background: skyblue;
+}
+
+.thirdsection-right {
+   background: #ff6347;
+   padding: 60px;
+}
+/* Footer section */
+.footer {
+   background: #ff6347;
+   padding: 20px 0;
+   color: #FFFFFF;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+.iconholder{
+   color: white;
+   /* font-size: 40px */
 }
